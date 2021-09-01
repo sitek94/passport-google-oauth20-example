@@ -1,0 +1,84 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray-300: #d1d5db;
+  --gray-900: #111827;
+  --blue-600: #2563eb;
+  --google-blue: #4285f4;
+  --google-active-blue: #1669f2;
+
+  --font-color: var(--gray-900);
+}
+
+html {
+  font-size: 20px;
+  font-family: 'Helvetica', arial, sans-serif;
+  color: var(--gray-900);
+}
+
+body {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  color: var(--white);
+  background: var(--gray-900);
+}
+
+main {
+  flex-grow: 1;
+  margin: 100px auto;
+}
+
+input {
+  width: 300px;
+  color: var(--font-color);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid;
+  border-color: var(--gray-300);
+  padding: 0.5rem;
+  transition: all 1000ms;
+}
+
+input:focus {
+  width: 400px;
+  outline: none;
+  border-color: var(--blue-600);
+}
+
+/* Google Button */
+.google-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 184px;
+  height: 42px;
+  background-color: var(--google-blue);
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.google-btn__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+}
+
+.google-btn__text {
+  flex: 1;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Roboto', 'Helvetica', arial, sans-serif;
+}
+
+.google-btn:hover {
+  box-shadow: 0 0 6px var(--google-blue);
+}
+.google-btn:active {
+  background: var(--google-active-blue);
+}
